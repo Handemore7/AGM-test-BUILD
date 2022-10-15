@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/AGM-test-BUILD/static/css/main.06b747e7.css",
+    "main.js": "/AGM-test-BUILD/static/js/main.50f794ee.js",
+    "index.html": "/AGM-test-BUILD/index.html",
+    "main.06b747e7.css.map": "/AGM-test-BUILD/static/css/main.06b747e7.css.map",
+    "main.50f794ee.js.map": "/AGM-test-BUILD/static/js/main.50f794ee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06b747e7.css",
+    "static/js/main.50f794ee.js"
+  ]
+}
