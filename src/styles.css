@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(228, 228, 228);
+    overflow-x: hidden;
+}
+
+/* Banner */
+
+.bannerContainer{
+}
+
+.bannerContainer img{
+}
+
+/* Barra de navegación */
+
+.navBarContainer{
+    width: 90%;
+    background-color: rgb(255, 255, 255, .8);
+    height: 10vh;
+    position: absolute;
+    top: 2vh;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    justify-self: center;
+    margin-left: 5vw;
+}
+
+.navBarImg{
+    height: 100%;
+}
+
+.navBarContent{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-right: 2vw;
+    color: rgb(33, 12, 71);
+    font-weight: bold;
+    width: 90%;
+}
+
+.navBarAboutUs{
+    cursor: pointer;
+    padding: 10px 20px;
+    color: rgb(67, 23, 117);
+}
+.navBarAboutUs:hover{
+    color: rgb(74, 138, 221);
+}
+
+.navBarSearch{
+    display: flex;
+}
+.navBarCat{
+    border: 2px solid rgb(26, 137, 241);
+    border-radius: 30px;
+    transform: translateX(15px);
+    background-color: #dff2f5;
+    color: rgb(26, 137, 241);;
+}
+
+.navBarCat div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navBarSearch input{
+    border: none;
+    padding-left: 20px;
+    outline: none;
+    width: 15vw;
+}
+
+.navBarSearchIcon{
+    transform: translateX(-20px);
+}
+
+.navBarIcon{
+    display: flex;
+    width: 6vh;
+    height: 6vh;
+    background-color: rgb(21, 148, 233);
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 50%;
+    margin-right: 1vw;
+}
+
+.navBarDropDowns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    height: 5.5vh;
+}
+
+/* Sección de CATEGORIAS */
+
+.categoriesContainer{
+
+}
+
+/* sección de FILTROS */
+
+.productsSection{
+    display: flex;
+}
+
+.filtersContainer{
+    width: 20%;
+    height: 60vh;
+    padding: 20px 10px;
+    margin-left: 2vw;
+}
+
+.filtersContent{
+    margin-top: 2vh;
+}
+
+.filtersTitle{
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: rgb(16, 9, 112);
+}
+
+.filtersInput{
+    width: 80%;
+    height: 6vh;
+    border-radius: 25px;
+    border: none;
+    padding: 0 20px;
+    margin: 1vh 0;
+    font-size: 1rem;
+    box-shadow: 5px 5px 5px rgb(201, 201, 201);
+    outline: none;
+}
+
+.filtersInput::placeholder{
+    color: rgb(170, 170, 170);
+}
+
+.filtersCheckbox input{
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.filtersCheckbox input:checked {
+    background-color: rgb(81, 204, 122);
+}
+
+.filtersSection{
+    font-size: 1rem;
+    color: rgb(27, 10, 85);
+    margin: 7vh 0 3vh;
+    font-weight: bold;
+}
+
+.filterCatContainer{
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    padding-left: 15px;
+    width: 90%;
+    height: 5vh;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgb(201, 201, 201);
+}
+
+.filterDesc{
+    color: rgb(70, 20, 116);
+}
+
+.clearFiltersBtn{
+    width: 50%;
+    height: 6vh;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(15, 103, 161);
+    background-color: rgb(163, 212, 245);
+    border: 2px solid rgb(15, 103, 161);
+    cursor: pointer;
+}
+
+
+/* Sección de TARJETAS */
+
+.productsContainer{
+    width: 80%;
+}
+
+/* TARJETAS */
+
+.cardContainer{
+    background-color: white;
+    width: 20%;
+    height: 54vh;
+    border-radius: 30px;
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    margin: 30px;
+    box-shadow: 5px 5px 5px rgb(201, 201, 201);
+    transition: .2s;
+}
+
+.cardDisabled{
+    background-color: rgb(177, 177, 177);
+    color: black;
+}
+
+.cardContainer:hover{
+    box-shadow: 5px 5px 5px rgb(68, 189, 236);
+    transform: scale(1.1);
+    /* transform: translateY(-10px); */
+}
+
+.cardTopElements{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.cardHearth {
+    font-size: 1.5rem;
+    color: blue;
+    right: 0px;
+    position: absolute;
+}
+.cardOffer{
+    font-size: 1.3rem;
+    width: 5vh;
+    background-color: rgb(216, 96, 40);
+    height: 5vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.cardOfferContainer{
+    background-color: rgb(188, 220, 241);
+    width: 50%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+.cardOfferContainer span{
+    margin: auto;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(55, 108, 255);
+}
+
+.cardImage {
+    width: 80%;
+    align-self: center;
+    border-radius: 15px;
+    margin-top: 20%;
+    box-shadow: 3px 3px 3px 3px rgb(201, 201, 201, .5);
+}
+
+.cardCategory {
+    color: rgb(82, 82, 226);
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: .9rem;
+}
+
+.cardTitle{
+    color: rgb(57, 11, 95);
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    max-height: 14%;
+    overflow: hidden;
+}
+
+.cardDescription{
+    color: rgb(40, 27, 51);
+    width: 100%;
+    max-height: 15%;
+    overflow: hidden;
+    margin: 0;
+    font-size: .9rem;
+}
+
+.cardPrice{
+    color: rgb(235, 93, 93);
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    position: absolute;
+    bottom: 8vh;
+}
+
+.cardButtons{
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardAdd{
+    height: 5vh;
+    width: 40%;
+    border-radius: 20px;
+    background-color: rgb(35, 123, 255);
+    font-weight: bold;
+    border: none;
+    color: white;
+    margin-right: 20px;
+}
+
+.cardCompare{
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 1.2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* PAGINATION */
+
+.paginationContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.paginationItem{
+    cursor: pointer;
+    margin-right: 20px;
+    width: 5vh;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.DropDownValue{
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.dropDownOptions{
+    position: absolute;
+    transform: translateY(4vh);
+}
+
+.dropDownOpt{
+    background-color: white;
+    text-align: center;
+    border: 1px solid black;
+    height: 3.5vh;
+    padding: 3px 10px;
+}
+
+.dropDownOpt:hover{
+    background-color: rgb(106, 197, 240);
+    color: white;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.DropDown{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+/* CATEGORIES */
+
+
+.categoriesOptions{
+
+}
+
+.categoriesOpt{
+    
+}
